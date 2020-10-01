@@ -1,0 +1,373 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Free website template from 4Templates.com</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="default.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+<!--
+	@import url("layout.css");
+.style1 {font-size: x-large}
+-->
+</style>
+</head>
+<script language="javascript">
+function validateForm(areaCode)
+{
+	var x=document.forms["form1"]["textfield"].value;
+	if (x=="")
+  {
+  alert("Customer Name must be filled out");
+  return false;
+  }
+  	
+  var phoneNum = new String(areaCode);
+  var regExpObj = /\d\d\d\d\d\d\d\d\d\d/;
+  //alert(areaCode);
+  if(regExpObj.exec(phoneNum) == null)
+  {
+   alert("Invalid Phone No !");
+	//alert("not ok");
+	return false;
+  }
+  
+  var x=document.forms["form1"]["textfield4"].value;
+var atpos=x.indexOf("@");
+var dotpos=x.lastIndexOf(".");
+if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length)
+  {
+  alert("Not a valid e-mail address");
+  return false;
+  }
+  
+  
+  var x=document.forms["form1"]["textfield5"].value;
+	if (x=="")
+  {
+  alert("Weight must be filled out");
+  return false;
+  }
+    
+}
+</script>
+
+<body>
+<div id="wrapper">
+	<div id="header">
+		<h1>BellMonte<img src="images1/logic/page5_files/logo.JPG" width="71" height="55" /></h1>
+		<h2>Carriers and Movers (Logistics Company)</h2>
+  </div>
+	<div id="main-menu">
+		<ul>
+			<li class="first"><a href="u.html" id="main-menu1" accesskey="1" title="">Back <a href="u.html" id="main-menu1" accesskey="1" title="">Signout</a></li>
+		</ul>
+  </div>
+	<div id="content">
+	  <div id="right">
+<form id="form1" name="form1" method="get" action="bpage1.jsp" onsubmit="return validateForm(textfield3.value)">
+  <div align="center" class="style13">
+    <h3 align="center" class="style12">&nbsp;</h3>
+    <h3 align="center" class="style10 style1"><strong>Booking Page  </strong></h3>
+  </div>
+  <div align="center">
+    <table width="647" border="1">
+      <tr>
+        <td width="158"><div align="left" class="style4"><strong>Customer Name </strong></div></td>
+        <td width="177"><label>
+          <div align="left">
+            <input name="textfield" type="text" maxlength="9" />
+            </div>
+        </label></td>
+        <td width="290" rowspan="12"><img src="images1/logic/logistics.jpg" width="280" height="371" /></td>
+      </tr>
+      <tr>
+        <td class="style5"><div align="left"><strong>Address</strong></div></td>
+        <td><label>
+          <div align="left">
+            <textarea name="textfield2"></textarea>
+            </div>
+        </label></td>
+      </tr>
+      <tr>
+        <td class="style5"><div align="left"><strong>Phone number </strong></div></td>
+        <td><label>
+          <div align="left">
+            <input name="textfield3" type="text" maxlength="10" />
+            </div>
+        </label></td>
+      </tr>
+      <tr>
+        <td class="style6"><div align="left"><strong>Email Id </strong></div></td>
+        <td><label>
+          <div align="left">
+            <input type="text" name="textfield4" />
+            </div>
+        </label></td>
+      </tr>
+      <tr>
+        <td class="style6"><div align="left"><strong>By</strong></div></td>
+        <td>
+          <span class="style7">
+          <label>
+          <div align="left">
+            <select name="select">
+              <option>Air</option>
+              <option>Land</option>
+              <option>Water</option>
+            </select>
+          </div>
+          </label>
+          </span>          <div align="left"></div></td>
+      </tr>
+      <tr>
+        <td class="style6"><div align="left"><strong>From</strong></div></td>
+        <td><span class="style7"></span><span class="style7">
+          <label>          </label>
+          </span>
+          <label><div align="left"><span class="style7">
+            <select name="select2">
+              <option value="Chennai">Chennai</option>
+              <option value="Bengaluru">Bengaluru</option>
+              <option value="Mumbai">Mumbai</option>
+              <option value="Mangalore">Mangalore</option>
+              <option value="Cochin">Cochin</option>
+              <option value="Vishakapatnam">Vishakapatnam</option>
+            </select>
+          </span></div>
+          </label>
+          <span class="style7"></span><span class="style7">          </span>          
+          <div align="left"></div></td>
+      </tr>
+      <tr>
+        <td class="style6"><div align="left"><strong>To</strong></div></td>
+        <td>
+                  
+                  <span class="style7">
+
+                  <label>          </label>          
+                  <label></label>                  
+                  <label></label>
+                  </span>          <label><div align="left" class="style7">
+                                <select name="select3">
+                                  <option value="Chennai">Chennai</option>
+                                  <option value="Bengaluru">Bengaluru</option>
+                                  <option value="Mumbai">Mumbai</option>
+                                  <option value="Mangalore">Mangalore</option>
+                                  <option value="Cochin">Cochin</option>
+                                  <option value="Vishakapatnam">Vishakapatnam</option>
+                                </select>
+            </div>
+        </label></td>
+      </tr>
+      <tr>
+        <td class="style6"><div align="left"><strong>Content</strong></div></td>
+        <td>
+          <div align="left"><span class="style7">
+            <select name="select10">
+              <option value="Engine">Engine</option>
+              <option value="Tyres and Rims">Tyres and Rims</option>
+              <option value="Crankshaft">Crankshaft</option>
+              <option value="Dashboard">Dashboard</option>
+              <option value="Leathers">Leathers</option>
+              <option value="Pistons  and Pistonrods">Pistons and Pistonrods</option>
+              <option value="Sheetmetal">Sheetmetal</option>
+              <option value="Charssi">Charssi</option>
+              <option value="Bumpers">Bumpers</option>
+              <option value="FrontGrills">FrontGrills </option>
+              
+            
+option>CHASSIE
+          
+            </select>
+          </span> </div></td>
+      </tr>
+      <tr>
+        <td class="style6"><div align="left"><strong>Weight</strong></div></td>
+        <td>
+          <span class="style7">
+          <label>
+          <div align="left">
+            <input name="textfield5" type="text" onblur="MM_validateForm('textfield5','','NisNum');return document.MM_returnValue" maxlength="5" />
+          </div>
+          </label>
+          </span> <div align="left">in Kgs         </div></td>
+      </tr>
+      <tr>
+        <td class="style6"><div align="left"><strong>Date Of Booking </strong></div></td>
+        <td>
+          <span class="style7">
+          <label>
+          <div align="left">
+            <select name="select4">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10</option>
+              <option>11</option>
+              <option>12</option>
+              <option>13</option>
+              <option>14</option>
+              <option>15</option>
+              <option>16</option>
+              <option>17</option>
+              <option>18</option>
+              <option>19</option>
+              <option>20</option>
+              <option>21</option>
+              <option>22</option>
+              <option>23</option>
+              <option>24</option>
+              <option>25</option>
+              <option>26</option>
+              <option>27</option>
+              <option>28</option>
+              <option>29</option>
+              <option>30</option>
+              <option>31</option>
+            </select>
+            <select name="select5">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10</option>
+              <option>11</option>
+              <option>12</option>
+            </select>
+            
+            <select name="select6">
+              <option>2000</option>
+              <option>2001</option>
+              <option>2003</option>
+              <option>2004</option>
+              <option>2005</option>
+              <option>2006</option>
+              <option>2007</option>
+              <option>2008</option>
+              <option>2009</option>
+              <option>2011</option>
+            </select>
+          </div>
+          </label>
+          </span>          </td>
+      </tr>
+      <tr>
+        <td class="style6"><div align="left"><strong>Date Of Deliver </strong></div></td>
+        <td>
+          <span class="style7">
+          <label>
+          <div align="left">
+            <select name="select7">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10</option>
+              <option>11</option>
+              <option>12</option>
+              <option>13</option>
+              <option>14</option>
+              <option>15</option>
+              <option>16</option>
+              <option>17</option>
+              <option>18</option>
+              <option>19</option>
+              <option>20</option>
+              <option>21</option>
+              <option>22</option>
+              <option>23</option>
+              <option>24</option>
+              <option>25</option>
+              <option>26</option>
+              <option>27</option>
+              <option>28</option>
+              <option>29</option>
+              <option>30</option>
+              <option>31</option>
+            </select>
+            
+            <select name="select8">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10</option>
+              <option>11</option>
+              <option>12</option>
+            </select>
+            
+            <select name="select9">
+              <option>2000</option>
+              <option>2001</option>
+              <option>2002</option>
+              <option>2003</option>
+              <option>2004</option>
+              <option>2005</option>
+              <option>2006</option>
+              <option>2007</option>
+              <option>2008</option>
+              <option>2009</option>
+              <option>2010</option>
+              <option>2011</option>
+            </select>
+          </div>
+          </label>
+          </span>          </td>
+      </tr>
+      <tr>
+        <td><label>
+          <div align="center">
+            <input type="submit" name="Submit" value="Submit"> 
+            </div>
+        </label></td>
+        <td><label>
+          <div align="center">
+            <input name="Reset" type=reset class="style5" id="Reset" value="Reset" />
+            </div>
+        </label></td>
+      </tr>
+    </table>
+  </div>
+</form>
+
+			<h2>&nbsp;</h2>
+	  </div>
+	</div>
+	<div id="footer">
+		<ul>
+			<li></li>
+		</ul>
+  </div>
+</div>
+</body>
+</html>
+
+			<center><span style="width: 100%; font-family: helvetica; font-size: 6px;">
+			Design downloaded from <a href="http://www.freewebtemplates.com" style="font-family: helvetica; font-size: 6px;">FreeWebTemplates.com</a><br>
+			Free web design, web templates, web layouts, and website resources!
+			</span></center><br><br>
+		

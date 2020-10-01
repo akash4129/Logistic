@@ -1,0 +1,250 @@
+/* bug #1548132 */
+#zWrap dl.module_bd_container dd{margin:5px 0 30px 5%;width:95% !important}
+#zWrap dl.module_bd_container dl dd{margin:0 0 20px 20px;width:auto !important}
+/* BUG #1532833 */
+#hd:after,#ft:after{content: ".";display:block;height:0;clear:both;overflow:hidden;visibility:hidden}
+#body,#hd,#pageName,#zA,#zB,#zC,#ft{zoom:1}
+/* BUG #1550640 */
+/* On a template basis, make sure to check that this element has a width but no height (min-height is OK) */
+#pageName {overflow:hidden;_overflow:visible;_overflow-x:hidden}
+/**************************************
+ Theme: Boardroom - Derived From: Blush
+**************************************/
+/* START -> DO NOT EDIT THIS SECTION */
+/* MIN-HEIGHT FOR THEME ELEMENTS (555px before #ft) */
+#hd{min-height:95px;_height:95px}
+#bd{min-height:36em;_height:36em;_overflow:visible;_overflow-x:hidden}
+#ft{min-height:80px;_height:80px;_overflow:visible;_overflow-x:hidden}
+/* STRUCTURE -------- */
+#doc{width:798px;margin:0 auto}
+#hd{position:relative;float:right;width:100%}
+#hContent{z-index:1;position:relative;width:567px;padding:42px 0 24px 210px}
+#hMisc {position:absolute;top:0;left:-60px;height:223px;width:858px}
+#hMisc * {display:none !important}
+#navigation{float:left;width:185px;position:relative;padding:0 6px 30px 0}
+/* in case there are not enough links in the nav bar to cover hMisc */
+ul#mainNav{margin-top:7px;min-height:100px;_height:100px}
+ul#mainNav li a{zoom:1;display:block;padding:4px 5px 3px 30px}
+#bd{clear:right;margin:0 0 30px 185px;position:relative}
+/* height instead of min-height here would trigger the "sinking bug" in FF */
+#pageName{line-height:2em;min-height:2em;_height:2em;width:565px;padding:0 20px 0 19px;border-bottom:7px solid #4d4038;margin-bottom:0;}
+#zWrap {margin-left:1px}
+#zB #mapZone{width:260px;height:245px}
+#zB #drivingDirectionsLnk{top:250px}
+#zC form#contactForm{width:220px}
+#ft{width:563px;margin-left:192px;padding:40px 20px 20px 20px}
+#fContent{float:right;width:300px}
+#fMisc{width:250px}
+/* FIXES ------------ */
+/* or we lose the borders */
+ul#mainNav{zoom:1}
+/* bug #1702547 FF to keep floats inside the boundaries of the box */
+#hContent,#fContent{overflow:hidden}
+/* 3px jog */
+#bd{_left:-3px;}
+#pagename{*border-left:-3px solid #aeb831}
+/* to make sure there is no gap below the Zone masks in the Module mask  */
+.modWrap{zoom:1}
+/* END -> DO NOT EDIT THIS SECTION */
+
+
+/* START -> CUSTOMIZATION SECTION */
+
+/* TYPOGRAPHY --------- */
+
+		/* User-Editable Body */
+
+		#body {
+			color: #44433f;
+			font-size: 12px;
+			font-family: Arial, sans-serif;
+		}
+
+		#hd {
+			color: #edecdc;
+		}
+
+		/* H1 Site Title */
+
+		#body h1 {
+			font-size: 40px;
+			font-family: "Times New Roman", Times, serif;
+		}
+
+		/* H2 Page Title */
+
+		#body h2 {
+			font-size: 18px;
+			font-weight: bold;
+		}
+
+		#pageName h2 {
+			font-size: 17px;
+			text-transform: uppercase;
+			color: #f7f1db;
+		}
+
+		/* H3 Paragraph Title */
+
+		#body h3 {
+			font-family: "Times New Roman", Times, serif;
+			font-size: 18px;
+			font-weight: bold;
+			color: #005c87;
+		}
+
+		#hd h3 {
+			color: #edecdc;
+		}
+
+		/* H4 Paragraph Subtitle */
+
+		#body h4 {
+			line-height: 16px;
+			font-weight: bold;
+		}
+
+		/* Footer */
+
+		#ft {
+			font-size: 11px;
+		}
+
+		/* Contact Info */
+
+		#fMisc {
+
+		}
+
+		/* Footer Content */
+
+		#fContent {
+
+		}
+
+/* LINKS ------------ */
+
+		#body a:link,
+		#body a:visited {
+			color: #007db8;
+		}
+
+		#body a:hover,
+		#body a:focus,
+		#body a:active {
+			text-decoration: none;
+		}
+
+		#hd a:link,
+		#hd a:visited {
+			color: #ffffff;
+		}
+
+		/* Nav Menu */
+
+		ul#mainNav a:link,
+		ul#mainNav a:visited {
+			color: #005c87;
+			font-size: 15px;
+			font-weight: bold;
+		}
+
+		ul#mainNav a:hover,
+		ul#mainNav a:focus,
+		ul#mainNav a:active {
+			color: #515655;
+		}
+
+		#navigation ul#mainNav li.active a {
+			color:#44433f;
+		}
+
+		/* Footer with Contact Info */
+
+		#ft a:link,
+		#ft a:visited {
+			color: #007db8;
+		}
+
+		#ft a:link:hover,
+		#ft a:link:focus,
+		#ft a:link:active {
+			text-decoration: none;
+		}
+
+/* BACKGROUNDS -------- */
+
+		html {
+			background-color: #4d4038 !important;
+ 		}
+
+		body  {
+			background-color: #4d4038;
+		}
+
+		#doc  {
+			background-image: url(http://us.i1.yimg.com/us.yimg.com/lib/smb/assets/hosting/yss/themes/boardroom/north/images/en-us/doc_1.2.gif);
+			background-repeat: repeat-y;
+		}
+
+		#hd  {
+			background-color: #4d4038;
+		}
+
+		#hMisc  {
+			background-image: url(http://us.i1.yimg.com/us.yimg.com/lib/smb/assets/hosting/yss/themes/boardroom/north/images/en-us/hmisc_1.2.gif);
+			background-repeat: no-repeat;
+		}
+
+		#pageName {
+			background-color: #aeb831;
+		}
+
+		ul#mainNav {
+			background-color: #a4b8c2;
+		}
+
+
+		ul#mainNav li {
+			background-color: #c2cfd7;
+		}
+
+		ul#mainNav li.active,
+		ul#mainNav a:hover,
+		ul#mainNav a:focus,
+		ul#mainNav a:active {
+			background-color: #a4b8c2;
+		}
+
+/* BORDERS --------------- */
+
+		#navigation {
+			border-top-width: 2em;
+			border-top-style: solid;
+			border-top-color: #aeb831;
+		}
+
+		ul#mainNav li {
+			border-bottom-width: 1px;
+			border-bottom-style: solid;
+			border-bottom-color: #9da6ab;
+		}
+
+		#mapZone {
+			border-width: 1px;
+			border-style: solid;
+			border-color: #acaeab;
+		}
+
+		* html #mapZone {
+			border:0
+		}
+
+		* html #mapContainer {
+			border-width: 1px;
+			border-style: solid;
+			border-color: #acaeab;
+		}
+
+/* END -> CUSTOMIZATION SECTION */
+

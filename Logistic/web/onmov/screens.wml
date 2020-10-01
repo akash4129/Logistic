@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.3//EN" 
+     "http://www.wapforum.org/DTD/wml13.dtd"> 
+<wml> 
+    <card id="card1" title="Admin Index">   
+    <p align="center"> 
+
+    <a href="http://localhost:8080/movbook/onmov/today.wml">Today</a><br/>
+   <a href="http://localhost:8080/movbook/onmov/tom.wml">Tommorrow</a><br/>
+ 
+      
+    </p> 
+     
+   
+</card> 
+</wml> 

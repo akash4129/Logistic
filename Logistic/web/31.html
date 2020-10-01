@@ -1,0 +1,77 @@
+<html>
+<head>
+<script type="text/javascript">
+cc1=0;
+cc2=0;
+cc3=0;
+function changeimage1()
+{
+if (cc1==0) 
+  {
+  cc1=1;
+  document.getElementById('myimage1').src="bulbon.gif";
+  }
+else
+  {
+  cc1=0;
+  document.getElementById('myimage1').src="bulboff.gif";
+  }
+
+	//return true;
+}
+function changeimage2()
+{
+if (cc2==0) 
+  {
+  cc2=1;
+  document.getElementById('myimage2').src="bulbon.gif";
+  }
+else
+  {
+  cc2=0;
+  document.getElementById('myimage2').src="bulboff.gif";
+  }
+
+}
+function changeimage3()
+{
+if (cc3==0) 
+  {
+  cc3=1;
+  document.getElementById('myimage3').src="bulbon.gif";
+  }
+else
+  {
+  cc3=0;
+  document.getElementById('myimage3').src="bulboff.gif";
+  }
+}
+
+function changeimage4()
+{
+var myjsp2call = "test.jsp?param1="+cc1+"&param2="+cc2+"&param3="+cc3;
+//&param2=value2;
+window.location.href = myjsp2call;
+
+
+}
+
+
+</script>
+</head>
+
+<body>
+
+<img id="myimage1" onclick="changeimage1()" border="0" src="bulboff.gif" width="100" height="180" />
+<img id="myimage2" onclick="changeimage2()" border="0" src="bulboff.gif" width="100" height="180" />
+<img id="myimage3" onclick="changeimage3()" border="0" src="bulboff.gif" width="100" height="180" />
+<img id="myimage4" onclick="changeimage4()" border="0" src="bulboff.gif" width="100" height="180" />
+
+<p>Click to turn on/off the light</p>
+
+
+
+
+
+</body>
+</html>

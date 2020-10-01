@@ -1,0 +1,51 @@
+/**************************************************************
+Theme: Boardroom - Derived From: Blush
+Layout: Layout 1 with Title - Derived from: Layout 1 with Title
+***************************************************************/
+/* START -> DO NOT EDIT THIS SECTION */
+#zA{width:563px;padding:20px 20px 10px 20px}
+#zB{float:left;width:270px;padding:10px 0 20px 20px}
+#zC{float:right;width:270px;padding:10px 22px 20px 0}
+/* END -> DO NOT EDIT THIS SECTION */
+
+
+/* START -> CUSTOMIZATION SECTION */
+
+/* TYPOGRAPHY --------- */
+
+		#zA  {
+			color: #005c87;
+			font-size: 15px;
+		}
+
+		#zA h3{
+			font-size: 24px;
+		}
+
+/* BACKGROUNDS -------- */
+
+		#doc  {
+			background-image: url(http://us.i1.yimg.com/us.yimg.com/lib/smb/assets/hosting/yss/themes/boardroom/north/images/en-us/doc_l1_1.2.gif);
+			background-repeat: repeat-y;
+		}
+
+		#zA,
+		#ft  {
+			background-color: #f5f5ed;
+		}
+
+/* BORDERS ------------ */
+
+		#zA {
+			border-bottom-width: 1px;
+			border-bottom-style: solid;
+			border-bottom-color: #bfbeba;
+		}
+		#ft  {
+			border-top-width: 1px;
+			border-top-style: solid;
+			border-top-color: #bfbeba;
+		}
+
+
+/* END -> CUSTOMIZATION SECTION */

@@ -1,0 +1,222 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Free website template from 4Templates.com</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="default.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+<!--
+	@import url("layout.css");
+.style6 {font-weight: bold}
+.style7 {
+	font-size: x-large;
+	font-weight: bold;
+}
+-->
+</style>
+</head>
+<script language="javascript">
+function validateForm(areaCode,wph,hph)
+{
+	var x=document.forms["Form1"]["textfield"].value;
+	if (x=="")
+  {
+  alert("First Name must be filled out");
+  return false;
+  }
+  var x=document.forms["Form1"]["textfield3"].value;
+	if (x=="")
+  {
+  alert("Company must be filled out");
+  return false;
+  }
+
+  var x=document.forms["Form1"]["textfield33"].value;
+	if (x=="")
+  {
+  alert("Postal Code must be filled out");
+  return false;
+  }
+  
+  var phoneNum = new String(areaCode);
+  var regExpObj = /\d\d\d\d\d\d\d\d\d\d/;
+  //alert(areaCode);
+  if(regExpObj.exec(phoneNum) == null)
+  {
+   alert("Invalid Mobile Phone No !");
+	//alert("not ok");
+	return false;
+  }
+  
+  var phoneNum = new String(wph);
+  var regExpObj = /\d\d\d\d\d\d\d\d\d\d/;
+  //alert(areaCode);
+  if(regExpObj.exec(phoneNum) == null)
+  {
+   alert("Invalid Work Phone No !");
+	//alert("not ok");
+	return false;
+  }
+  
+  
+  var phoneNum = new String(hph);
+  var regExpObj = /\d\d\d\d\d\d\d\d\d\d/;
+  //alert(areaCode);
+  if(regExpObj.exec(phoneNum) == null)
+  {
+   alert("Invalid Home Phone No !");
+	//alert("not ok");
+	return false;
+  }
+  
+  
+  
+  
+  var x=document.forms["Form1"]["textfield37"].value;
+var atpos=x.indexOf("@");
+var dotpos=x.lastIndexOf(".");
+if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length)
+  {
+  alert("Not a valid e-mail address");
+  return false;
+  }
+ 
+}
+</script>
+<body>
+<div id="wrapper">
+	<div id="header">
+		<h1>BellMonte<img src="images1/logic/page5_files/logo.JPG" width="71" height="55" /></h1>
+		<h2>Carriers and Movers (Logistics Company)</h2>
+  </div>
+	<div id="main-menu">
+		<ul>
+			<li class="first"><a href="u.html" id="main-menu1" accesskey="1" title="">Back</a><a href="homepage.html" id="main-menu1" accesskey="1" title="">Signout</a></li>
+		</ul>
+  </div>
+	<div id="content">
+	  <div align="left"><img src="images1/logic/home_files/sea-road-cargo.jpg" width="522" height="129" />
+      </div>
+	  <div id="right">
+			<form id="Form1" name="Form1" method="get" action="creg.jsp" onsubmit="return validateForm(textfield34.value,textfield35.value,textfield36.value)">
+  <h3 align="center" class="style6">&nbsp;</h3>
+  <p align="center" class="style7">Customer Registration Page </p>
+  <table width="92%" border="1" align="center">
+    <tr> 
+      <td width="29%"><strong><strong>First Name </strong></strong></td>
+      <td width="35%"><strong><font size="+2"> 
+        <input name="textfield" type="text" maxlength="9">
+      </font></strong></td>
+      <td width="36%" rowspan="14"><strong><img src="images1/logic/signup_Now_icon.jpg" width="170" height="171" /></strong></td>
+    </tr>
+    <tr> 
+      <td width="29%"><strong>Last Name </strong></td>
+      <td width="35%"><strong> 
+      <input name="textfield2" type="text" maxlength="9">      
+      </strong></td>
+    </tr>
+    <tr> 
+      <td width="29%"><strong>Company</strong></td>
+      <td width="35%"><strong> 
+      <input type="text" name="textfield3">      
+      </strong></td>
+    </tr>
+    <tr> 
+      <td width="29%"><strong>Address</strong></td>
+      <td width="35%"><strong> 
+        <textarea name="textfield32"></textarea>      
+        </strong></td>
+    </tr>
+    <tr> 
+      <td width="29%"><strong>City</strong></td>
+      <td width="35%"><strong> 
+        <select name="select">
+          <option>Bangalore</option>
+          <option>Agrathala</option>
+          </select>      
+        </strong></td>
+    </tr>
+    <tr> 
+      <td width="29%"><strong>State</strong></td>
+      <td width="35%"><strong> 
+        <select name="select2">
+          <option>Karnataka</option>
+          </select>      
+        </strong></td>
+    </tr>
+    <tr> 
+      <td width="29%"><strong>Country</strong></td>
+      <td width="35%"><strong> 
+        <select name="select3">
+          <option>India</option>
+          </select>      
+        </strong></td>
+    </tr>
+    <tr> 
+      <td width="29%"><strong>Postal Code </strong></td>
+      <td width="35%"><strong> 
+      <input name="textfield33" type="text" maxlength="9">     
+      </strong></td>
+    </tr>
+    <tr> 
+      <td width="29%"><strong>Work Phone </strong></td>
+      <td width="35%"><strong> 
+      <input name="textfield34" type="text" maxlength="10">      
+      </strong></td>
+    </tr>
+    <tr> 
+      <td width="29%"><strong>Home Phone</strong></td>
+      <td width="35%"><strong> 
+      <input name="textfield35" type="text" maxlength="10">  
+      </strong></td>
+    </tr>
+    <tr> 
+      <td width="29%"><strong>Mobile Phone</strong></td>
+      <td width="35%"><strong> 
+       <input name="textfield36" type="text" maxlength="10">
+      </strong></td>
+    </tr>
+    <tr> 
+      <td width="29%"><strong>E-Mail</strong></td>
+      <td width="35%"><strong> 
+       <input name="textfield37" >      
+      </strong></td>
+    </tr>
+    <tr> 
+      <td width="29%"><strong>Fax</strong></td>
+      <td width="35%"><strong>
+      <input name="textfield38" type="text" maxlength="9">
+      </strong></td>
+    </tr>
+    <tr> 
+      <td width="29%"><div align="center"><strong>        
+        <input name="Submit" type="submit"  value="submit"/>      
+      </strong></div></td>
+      <td width="35%"><div align="center"><strong>
+        <input type="reset" name="Submit2" value="Reset">      
+      </strong></div></td>
+    </tr>
+  </table>
+  <div align="center"></div>
+  <p align="center"> &nbsp;&nbsp; </p>
+</form>
+
+			<h2>&nbsp;</h2>
+	  </div>
+  </div>
+	<div id="footer">
+		<ul>
+			<li></li>
+		</ul>
+	</div>
+</div>
+</body>
+</html>
+
+			<center><span style="width: 100%; font-family: helvetica; font-size: 6px;">
+			Design downloaded from <a href="http://www.freewebtemplates.com" style="font-family: helvetica; font-size: 6px;">FreeWebTemplates.com</a><br>
+			Free web design, web templates, web layouts, and website resources!
+			</span></center><br><br>
+		

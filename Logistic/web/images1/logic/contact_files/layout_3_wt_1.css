@@ -1,0 +1,48 @@
+/**************************************************************
+Theme: Boardroom - Derived From: Blush  
+Layout: Layout 3 with Title - Derived From: Layout 3 with Title
+**************************************************************/
+/* START -> DO NOT EDIT THIS SECTION */
+/* zB would clear the nav bar */
+#zWrap{overflow:hidden;zoom:1;}
+#zA{float:left;width:320px;margin:20px 0 10px 20px;display:inline;}
+#zB{clear:left;float:left;width:320px;margin:10px 0 20px 20px;display:inline;}
+#zC{width:242px;}
+/* fix for bug #2033450 */
+/* for all browsers */
+#zC{margin-left:360px;}
+/* for Firefox */
+#zC,x:-moz-any-link{margin-left:20px;}
+/* for Firefox 3 */
+#zC,x:-moz-any-link,x:default{margin-left:360px;}
+/* for IE 6/7 (-3px jog) */
+#zC,{margin-left:357px;}
+#zC .modWrap{padding:20px 20px 5px 20px;}
+#zB #mapZone{width:300px;}
+#zC form#contactForm{width:175px;}
+/* END -> DO NOT EDIT THIS SECTION */
+
+
+/* START -> CUSTOMIZATION SECTION */
+
+/* TYPOGRAPHY --------- */
+
+/* BACKGROUNDS -------- */
+
+		#zC  {
+			background-color: #f1f2e0;
+		}		
+
+/* BORDERS ------------ */
+
+		#zC {
+			border-left-width: 1px;
+			border-left-style: solid;
+			border-left-color: #bfbeba;
+			border-bottom-width: 1px;
+			border-bottom-style: solid;
+			border-bottom-color: #bfbeba;
+		}		
+
+
+/* END -> CUSTOMIZATION SECTION */	
